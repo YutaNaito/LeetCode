@@ -13,14 +13,9 @@ using namespace std;
 
 class Solution {
 public:
-    bool isMatch(string s, string p) {
-        std::regex reg(p);
-        if(std::regex_match(s, reg)){
-            return true;
-        }else{
-            return false;
-        }
-    }
+  bool isMatch(string s, string p) {
+    std::regex reg(p);
+    return std::regex_match(s, reg);
+  }
 };
 // @lc code=end
-
